@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Grupo de Função para balança</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZFGMM_BALANCATOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZFGMM_BALANCA</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZFMMM_RECEBE_PESO</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>FM -RECEBER PELO DA BALANÇA</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>P_ESTACAO</PARAMETER>
+       <TYP>STRING</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>P_IP</PARAMETER>
+       <TYP>STRING</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>P_PESO</PARAMETER>
+       <TYP>STRING</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>P_RESULT</PARAMETER>
+       <TYP>STRING</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>P_ESTACAO</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Campo de texto</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_IP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Campo de texto</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_PESO</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Total peso</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_RESULT</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
